@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chocolate Products</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <section class="main">
+    <div class="navbar h-class">
+      <ul class="items v-class">
+          <li><a href="/">home</a></li>
+          <li><a href="/product.html">products</a></li>
+          <li><a href="/about.html">about</a></li>
+          <li><a href="/story.html">story</a></li>
+          <li><a href="/contact.html">contact</a></li>
+      </ul>
+      <button class="btn">buy now</button>
+  </div>
+    <div class="burger">&#9776</div>
+    <div class="main-heading">
+      <p class="para">our products</p>
+      <h1 class="heading">chocolate shop</h1>
+      <p class="mid-para">Choose your favorite chocolate and add it to your cart.</p>
+    </div>
+  </section>
+
+  <!-- Product Section -->
+  <section class="sec">
+    <div class="row">
+
+      <!-- Product 1 -->
+      <div class="box product">
+        <img src="img/pic1.jpg" alt="Dark Chocolate">
+        <h2>Dark Chocolate</h2>
+        <p class="mid-para">Rs.500</p>
+        <button class="btn buy-now">Buy Now</button>
+        <button class="btn add-to-cart" data-name="Dark Chocolate" data-price="500">Add to Cart</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="boxproduct">
+        <img src="img/pic2.jpg" alt="Milk Chocolate">
+        <h2>Milk Chocolate</h2>
+        <p class="mid-para">Rs.299</p>
+        <button class="btn buy-now">Buy Now</button>
+        <button class="btn add-to-cart" data-name="Milk Chocolate" data-price="299">Add to Cart</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="box product">
+        <img src="img/pic3.jpg" alt="White Chocolate">
+        <h2>White Chocolate</h2>
+        <p class="mid-para">Rs.399</p>
+        <button class="btn buy-now">Buy Now</button>
+        <button class="btn add-to-cart" data-name="White Chocolate" data-price="399">Add to Cart</button>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="box product">
+        <img src="img/png1.png.jpg" alt="Hazelnut Chocolate">
+        <h2>Hazelnut Chocolate</h2>
+        <p class="mid-para">Rs.499</p>
+        <button class="btn buy-now">Buy Now</button>
+        <button class="btn add-to-cart" data-name="Hazelnut Chocolate" data-price="499">Add to Cart</button>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="box product">
+        <img src="img/pic1.jpg" alt="Strawberry Chocolate">
+        <h2>Strawberry Chocolate</h2>
+        <p class="mid-para">Rs.599</p>
+        <button class="btn buy-now">Buy Now</button>
+        <button class="btn add-to-cart" data-name="Strawberry Chocolate" data-price="599">Add to Cart</button>
+      </div>
+
+    </div>
+
+    <!-- Cart Section -->
+    <div class="cart">
+      <h2>Your Cart</h2>
+      <ul class="cart-items"></ul>
+      <p class="total">Total: Rs<span id="cart-total">0.00</span></p>
+    </div>
+  </section>
+
+  <script src="cart.js"></script>
+  <script src="product.js"></script>
+</body>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Haven - Premium Chocolate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" 
+    integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="main">
+        <div class="navbar h-class">
+            <ul class="items v-class">
+                <li><a href="/">home</a></li>
+                <li><a href="product.html">products</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#story">story</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="/login.php" class="login-btn">login</a></li>
+                <li><a href="php-auth-app/public/register.php" class="register-btn">register</a></li>
+            </ul>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+                <button class="btn">buy now</button>
+            </div>
+        </div>
+        <div class="burger">&#9776</div>
+        <div class="main-heading">
+            <p class="para">ChocoPrime</p>
+            <h1 class="heading">Premium Dark Chocolate</h1>
+            <p class="mid-para">Indulge in our exquisite collection of handcrafted chocolates made from the finest cocoa beans. Each bite is a journey through rich flavors and smooth textures that will delight your senses.</p>
+            <button class="btn btn1">Explore</button>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="sec" id="story">
+        <p class="para">since 2021</p>
+        <h1 class="heading">our story</h1>
+        <div class="row">
+            <div class="boxes">
+                <h1>Chocolate with a Story</h1>
+                <p class="mid-para">Our journey began in a small kitchen with a passion for creating exceptional chocolate. Today, we combine traditional techniques with innovative flavors to bring you unforgettable chocolate experiences.</p>
+                <button class="btn btn1">Read More</button>
+            </div>
+            <div class="img"><img src="img/pic3.jpg" alt="Chocolate making process"></div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="sec" id="products">
+        <p class="para">premium selection</p>
+        <h1 class="heading">our chocolates</h1>
+        <div class="row">
+            <div class="box product-box">
+                <img src="img/pic1.jpg" alt="Dark Chocolate">
+                <h2>Dark Chocolate</h2>
+                <p class="price">85rs</p>
+                <button class="add-to-cart" data-id="1" data-name="Dark Chocolate" data-price="8.99">Add to Cart</button>
+            </div>
+            <div class="box product-box">
+                <img src="img/pic2.jpg" alt="Milk Chocolate">
+                <h2>Milk Chocolate</h2>
+                <p class="price">120rs</p>
+                <button class="add-to-cart" data-id="2" data-name="Milk Chocolate" data-price="7.99">Add to Cart</button>
+            </div>
+            <div class="box product-box">
+                <img src="img/pic3.jpg" alt="White Chocolate">
+                <h2>White Chocolate</h2>
+                <p class="price">150rs</p>
+                <button class="add-to-cart" data-id="3" data-name="White Chocolate" data-price="6.99">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="sec a-sec" id="about">
+        <div class="about">
+            <div class="about-box">
+                <h1 class="heading">About Us</h1>
+                <p class="mid-para">At Chocolate Haven, we're dedicated to crafting the finest chocolates using ethically sourced cocoa beans. Our master chocolatiers combine traditional European techniques with innovative flavors to create unique taste experiences. We prioritize sustainability and fair trade practices throughout our supply chain, ensuring that every bite supports both quality and ethical production.</p>
+                <button class="btn btn1">Our Process</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="comments sec">
+        <p class="para">customer love</p>
+        <h1 class="heading">testimonials</h1>
+        <div class="row">
+             <div class="box c-box">
+                <p>This chocolate is absolutely delightful! From the rich aroma to the smooth, melt-in-your-mouth texture, every bite feels like a luxurious treat. It's clear that quality ingredients and care go into every bar. A must-try for any true chocolate lover!</p>
+                <h3>Harsh</h3>
+             </div>
+             <div class="box c-box">
+                <p>Delicious and satisfying! This chocolate has the perfect balance of sweetness and richness. I keep coming back for more. The dark chocolate with sea salt is my absolute favorite - the flavor combination is divine.</p>
+                <h3>Aditya</h3>
+             </div>
+             <div class="box c-box">
+                <p>I've been a chocolate connoisseur for years, and Chocolate Haven exceeds all expectations. The attention to detail in texture and flavor profiling is remarkable. Their ethical sourcing practices make enjoying their products even more rewarding.</p>
+                <h3>Vaishnavi</h3>
+             </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="sec" id="feedback">
+        <h1 class="heading">We Value Your Feedback</h1>
+        <form class="feedback-form" method="post" action="#">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="feedback" placeholder="Your Feedback" required></textarea>
+            <button type="submit" class="btn">Submit Feedback</button>
+        </form>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items will be added here dynamically -->
+            </div>
+            <div class="cart-total">
+                <p>Total: $<span id="cartTotal">0.00</span></p>
+            </div>
+            <button class="btn checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="sec contact" id="contact">
+        <div class="contact-box">
+            <div class="Con-box">
+                <p class="para">get in touch</p>
+                <h1 class="heading">contact us</h1>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <div class="icons">
+                    <div>
+                        <i class="fab fa-facebook"></i>
+                        <span>@ChocolateHaven</span>
+                    </div>
+                    <div>
+                        <i class="fab fa-instagram"></i>
+                        <span>@ChocolateHaven</span>
+                    </div>
+                    <div>
+                        <i class="fab fa-whatsapp"></i>
+                        <span>+1 234 567 890</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
